@@ -17,29 +17,40 @@ body{
 .calculator__container {
     width: 20rem;
 }
-.calculator__visor {
+
+.calculator__display-aux {
+    text-align: right;
+    font-size: .7rem;
+    font-style: italic;
+    height: 15px;
+}
+
+.calculator__display {
     font-size: 2rem;
     background-color: #1f1f1f;
     width: 100%;
+    height: 50px;
     padding: .5rem;
     text-align: right;
-    margin: 1rem 0;
+    margin: .3rem 0 1rem;
     border-radius: 5px;
 }
+
 
 .calculator__keys {
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: .4rem;
     grid-template-areas: 
-    "ac ac del division"
+    "ac ac percentage division"
     "seven eight nine times"
     "four five six minus"
     "one two three plus"
     "zero dot equal plus"
 }
 
-.key {
+.key,
+.operator {
     font-size: 1.2rem;
     background-color: #1f1f1f;
     text-align: center;
@@ -49,6 +60,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+
 .zero {
     grid-area: zero;
 }
@@ -85,8 +97,8 @@ body{
 .reset {
     grid-area: ac;
 }
-.delete {
-    grid-area: del;
+.percentage {
+    grid-area: percentage;
 }
 .division {
     grid-area: division;
