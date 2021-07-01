@@ -26,7 +26,7 @@ body{
 }
 
 .calculator__display {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #1f1f1f;
     width: 100%;
     height: 50px;
